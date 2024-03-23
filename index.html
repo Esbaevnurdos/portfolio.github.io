@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a4f4a76168.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="img/icon.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li>
+            <a class="active" href="#hero" onclick="scrollToSection('hero')"
+              >Home</a
+            >
+          </li>
+
+          <li>
+            <a href="#container" onclick="scrollToSection('Projects')"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#comment" onclick="scrollToSection('Feedback')"
+              >Feedback</a
+            >
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+
+          <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+        </ul>
+      </div>
+
+      <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="hero">
+      <div class="imgpart"><img src="img/nurdos.jpeg" alt="" /></div>
+      <div class="tradepart">
+        <h4></h4>
+        <h2>Hi, I'm Nurdos Oksikbay</h2>
+        <h1><span style="color: white">and I'm</span> Backend Developer</h1>
+        |
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          numquam maxime eligendi repellendus repudiandae maiores vero voluptate
+          placeat, quaerat id, dicta deserunt quo minus qui, neque dolorem fuga
+          omnis tempore.
+        </p>
+        <button>Download cv</button>
+      </div>
+    </section>
+
+    <section id="container">
+      <h2>Project Gallery</h2>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search projects by name"
+      />
+
+      <div class="gallery" id="gallery">
+        <div class="project" data-name="Calculator">
+          <img src="img/calculatorr.png" alt="Project A" />
+          <p>Calculator</p>
+          <button onclick="openModal('Calculator')">Hire</button>
+        </div>
+        <div class="project" data-name="DataTime">
+          <img src="img/data.png" alt="Project B" />
+          <p>DataTime</p>
+          <button onclick="openModal('DataTime')">Hire</button>
+        </div>
+        <div class="project" data-name="Notes">
+          <img src="img/zametki.png" alt="Project A" />
+          <p>Notes</p>
+          <button onclick="openModal('Notes')">Hire</button>
+        </div>
+        <div class="project" data-name="List">
+          <img src="img/spisok.png" alt="Project A" />
+          <p>List</p>
+          <button onclick="openModal('List')">Hire</button>
+        </div>
+        <div class="project" data-name="ShopSite">
+          <img src="img/website.png" alt="Project A" />
+          <p>ShopSite</p>
+          <button onclick="openModal('ShopSite')">Hire</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="comment">
+      <h2>Feedback</h2>
+
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Tab1')">
+          Feedback 1
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">
+          Feedback 2
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">
+          Feedback 3
+        </button>
+      </div>
+
+      <div id="Tab1" class="tabcontent">
+        <h3>Arkin Novarov</h3>
+        <p>This is the first comment.</p>
+      </div>
+
+      <div id="Tab2" class="tabcontent">
+        <h3>Maditar Akylbek</h3>
+        <p>This is the second comment.</p>
+      </div>
+
+      <div id="Tab3" class="tabcontent">
+        <h3>Me</h3>
+        <p>This is the third comment.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Your Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
